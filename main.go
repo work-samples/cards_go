@@ -3,8 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	card := newCard()
-	fmt.Println(card)
+	cards := []string{"5♤", newCard()}
+	cards = append(cards, "6♤")
+
+	fmt.Println(cards)
 }
 
 func newCard() string {
