@@ -8,8 +8,8 @@ func main() {
 	hand, remainingCards := deal(cards, 3)
 
 	fmt.Println("My Hand")
-	hand.print()
+	fmt.Println(hand.toString())
 
 	fmt.Println("Remaining Deck")
-	remainingCards.print()
+	fmt.Println(remainingCards.toString())
 }
