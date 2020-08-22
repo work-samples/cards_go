@@ -1,11 +1,13 @@
 package main
 
 func main() {
-	// cards := newDeck()
-	// cards.saveToFile("cards.csv")
-
-	cards := newDeckFromFile("cards.csv")
+	cards := newDeck()
+	cards.shuffle()
 	cards.print()
+
+	// cards.saveToFile("cards.csv")
+	// cards := newDeckFromFile("cards.csv")
+	// cards.print()
 	// hand, remainingCards := deal(cards, 3)
 
 	// fmt.Println("My Hand")
